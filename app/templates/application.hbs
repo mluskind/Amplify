@@ -1,34 +1,43 @@
 <nav class="navbar navbar-light bg-faded">
   <div class="container">
-    {{#link-to 'index' class="navbar-brand"}}<img src="assets/img/amplify3.png">{{/link-to}}
+    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2" aria-controls="exCollapsingNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+      &#9776;
+    </button>
+    <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+      {{#link-to 'index' class="navbar-brand"}}<img src="assets/img/amplify2.png">{{/link-to}}
       <ul class="nav navbar-nav pull-xs-right">
         <li class="nav-item">
-          {{#link-to 'carriers' class="nav-link"}}Carriers{{/link-to}}
+          {{#link-to 'carriers' class="nav-link"}}CARRIERS{{/link-to}}
         </li>
         <li class="nav-item">
-          {{#link-to 'shippers' class="nav-link"}}Shippers{{/link-to}}
+          {{#link-to 'shippers' class="nav-link"}}SHIPPERS{{/link-to}}
         </li>
         <li class="nav-item">
-          {{#link-to 'resources' class="nav-link"}}Resources{{/link-to}}
+          {{#link-to 'resources' class="nav-link"}}RESOURCES{{/link-to}}
         </li>
         <li class="nav-item">
-          {{#link-to 'about' class="nav-link"}}About Us{{/link-to}}
+          {{#link-to 'about' class="nav-link"}}ABOUT US{{/link-to}}
         </li>
       </ul>
+    </div>
   </div>
 </nav>
 
 {{outlet}}
 
-<footer class="footer">
-  <div class="container">
-    <ul class="bd-footer-links">
-      <li><a href="https://github.com/twbs/bootstrap">GitHub</a></li>
-      <li><a href="https://twitter.com/getbootstrap">Twitter</a></li>
-      <li><a href="/examples/">Examples</a></li>
-      <li><a href="/about/history/">About</a></li>
-    </ul>
-    <p>Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>. Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
-    <p>Currently v4.0.0-alpha.4. Code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
+<footer id="footer">
+  <div class="container footer-content">
+    <div class="row">
+
+      <div class="col-sm-6">
+        {{#link-to 'index' class="navbar-brand"}}<img src="assets/img/amplify2.png">{{/link-to}}
+      </div>
+
+      <div class="col-sm-6">
+        <p>©Copyright 2016	Amplifylogistics.com, Inc.</p>
+        <p>1-800-483-3728</p>
+      </div>
+
+    </div>
   </div>
 </footer>
